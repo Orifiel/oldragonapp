@@ -1,49 +1,48 @@
 import React from 'react';
 
 import { Container, Header, Attribuits, Attacks, Notations } from './style';
+import Logo from '../../assets/logos.png';
 
 const Planilha: React.FC = () => (
   <>
     <Container>
+      <img src={Logo} alt="Old Dragon" />
       <Header>
-        <input name="Personagem" type="text" placeholder="Personagem" />
-        <input name="Classe" type="text" placeholder="Classe" />
-        <input name="Raça" type="text" placeholder="Raça" />
-        <input name="Alinhamento" type="text" placeholder="Alinhamento" />
+        <div className="Name">
+          <label htmlFor="Nome">
+            <input type="text" name="Nome" id="" />
+            Personagem
+          </label>
+        </div>
+        <div className="Others">
+          <div className="Classe">
+            <label htmlFor="Classe">
+              <input type="text" name="Classe" id="" />
+              Classe
+            </label>
+          </div>
+          <div className="Raça">
+            <label htmlFor="Raça">
+              <input type="text" name="Raça" id="" />
+              Raça
+            </label>
+          </div>
+          <div className="Alinhamento">
+            <label htmlFor="Alinhamento">
+              <input type="text" name="Alinhamento" id="" />
+              Alinhamento
+            </label>
+          </div>
+        </div>
       </Header>
       <Attribuits>
-        <form action="#">
-          <label htmlFor="FOR">
-            FOR :
-            <input name="FOR" type="text" />
-          </label>
-          <label htmlFor="DES">
-            DES :
-            <input name="DES" type="text" />
-          </label>
-          <label htmlFor="CON">
-            CON :
-            <input name="CON" type="text" />
-          </label>
-          <label htmlFor="INT">
-            INT :
-            <input name="INT" type="text" />
-          </label>
-          <label htmlFor="SAB">
-            SAB :
-            <input name="SAB" type="text" />
-          </label>
-          <label htmlFor="CAR">
-            CAR :
-            <input name="CAR" type="text" />
-          </label>
-        </form>
+        <h2>Atributos</h2>
       </Attribuits>
       <Attacks>
-        <input type="text" />
+        <h2>Ataques</h2>
       </Attacks>
       <Notations>
-        <input type="text" />
+        <h2>Anotações</h2>
       </Notations>
     </Container>
   </>
