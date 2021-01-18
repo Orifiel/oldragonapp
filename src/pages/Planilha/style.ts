@@ -43,7 +43,7 @@ export const Attribuits = styled.div`
       display: flex;
       flex-direction: column;
 
-      div {
+      input {
         width: 50%;
         margin-bottom: 5px;
         display: flex;
@@ -56,6 +56,11 @@ export const Attribuits = styled.div`
           font-weight: 600;
         }
         div {
+          input[type='number']::-webkit-inner-spin-button,
+          input[type='number']::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
           margin-right: 5px;
         }
       }

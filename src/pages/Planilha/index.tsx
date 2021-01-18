@@ -30,42 +30,42 @@ const Planilha: React.FC = () => (
                 <p>FOR</p>
               </div>
               <Input name="força" type="number" min="8" max="20" />
-              <Input name="modFOR" type="integer" />
+              <Input name="modFOR" type="integer" disabled defaultValue={0} />
             </div>
             <div>
               <div>
                 <p>DES</p>
               </div>
               <Input name="destreza" type="number" min="8" max="20" />
-              <Input name="modDES" type="number" />
+              <Input name="modDES" type="number" disabled defaultValue={0} />
             </div>
             <div>
               <div>
                 <p>CON</p>
               </div>
               <Input name="Constituição" type="number" min="8" max="20" />
-              <Input name="modCON" type="number" />
+              <Input name="modCON" type="number" disabled defaultValue={0} />
             </div>
             <div>
               <div>
                 <p>INT</p>
               </div>
               <Input name="inteligencia" type="number" min="8" max="20" />
-              <Input name="modINT" type="number" />
+              <Input name="modINT" type="number" disabled defaultValue={0} />
             </div>
             <div>
               <div>
                 <p>SAB</p>
               </div>
               <Input name="sabedoria" type="number" min="8" max="20" />
-              <Input name="modSAB" type="number" />
+              <Input name="modSAB" type="number" disabled defaultValue={0} />
             </div>
             <div>
               <div>
                 <p>CAR</p>
               </div>
               <Input name="Carisma" type="number" min="8" max="20" />
-              <Input name="modCAR" type="number" />
+              <Input name="modCAR" type="number" disabled defaultValue={0} />
             </div>
           </form>
         </div>

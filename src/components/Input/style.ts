@@ -9,6 +9,11 @@ export const Container = styled.div`
   font-size: 20px;
   color: #570903;
 
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
   input {
     flex: 1;
     background: transparent;
@@ -18,11 +23,6 @@ export const Container = styled.div`
     ::placeholder {
       color: #570903;
       font-style: italic;
-    }
-    input[type='number']::-webkit-inner-spin-button,
-    input[type='number']::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
     }
   }
 `;
