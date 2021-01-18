@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container, Header, Attribuits, Attacks, Notations } from './style';
+import Input from '../../components/Input';
 import Logo from '../../assets/logos.png';
 
 const Planilha: React.FC = () => (
@@ -8,35 +9,66 @@ const Planilha: React.FC = () => (
     <Container>
       <img src={Logo} alt="Old Dragon" />
       <Header>
-        <div className="Name">
-          <label htmlFor="Nome">
-            <input type="text" name="Nome" id="" />
-            Personagem
-          </label>
-        </div>
-        <div className="Others">
-          <div className="Classe">
-            <label htmlFor="Classe">
-              <input type="text" name="Classe" id="" />
-              Classe
-            </label>
-          </div>
-          <div className="Raça">
-            <label htmlFor="Raça">
-              <input type="text" name="Raça" id="" />
-              Raça
-            </label>
-          </div>
-          <div className="Alinhamento">
-            <label htmlFor="Alinhamento">
-              <input type="text" name="Alinhamento" id="" />
-              Alinhamento
-            </label>
-          </div>
+        <Input type="text" name="Nome" placeholder="Personagem" />
+        <div className="others">
+          <Input type="text" name="Raça" placeholder="Raça" />
+
+          <Input type="text" name="Classe" placeholder="Classe" />
+
+          <Input type="text" name="Alinhamento" placeholder="Alinhamento" />
         </div>
       </Header>
       <Attribuits>
-        <h2>Atributos</h2>
+        <div>
+          <h2>Atributos</h2>
+        </div>
+
+        <div>
+          <form action="forgot">
+            <div>
+              <div>
+                <p>FOR</p>
+              </div>
+              <Input name="força" type="number" min="8" max="20" />
+              <Input name="modFOR" type="integer" />
+            </div>
+            <div>
+              <div>
+                <p>DES</p>
+              </div>
+              <Input name="destreza" type="number" min="8" max="20" />
+              <Input name="modDES" type="number" />
+            </div>
+            <div>
+              <div>
+                <p>CON</p>
+              </div>
+              <Input name="Constituição" type="number" min="8" max="20" />
+              <Input name="modCON" type="number" />
+            </div>
+            <div>
+              <div>
+                <p>INT</p>
+              </div>
+              <Input name="inteligencia" type="number" min="8" max="20" />
+              <Input name="modINT" type="number" />
+            </div>
+            <div>
+              <div>
+                <p>SAB</p>
+              </div>
+              <Input name="sabedoria" type="number" min="8" max="20" />
+              <Input name="modSAB" type="number" />
+            </div>
+            <div>
+              <div>
+                <p>CAR</p>
+              </div>
+              <Input name="Carisma" type="number" min="8" max="20" />
+              <Input name="modCAR" type="number" />
+            </div>
+          </form>
+        </div>
       </Attribuits>
       <Attacks>
         <h2>Ataques</h2>
