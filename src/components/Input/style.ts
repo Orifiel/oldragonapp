@@ -8,6 +8,7 @@ export const Container = styled.div`
   border-radius: 20px;
   font-size: 20px;
   color: #570903;
+  margin-bottom: 8px;
 
   input[type='number']::-webkit-inner-spin-button,
   input[type='number']::-webkit-outer-spin-button {
