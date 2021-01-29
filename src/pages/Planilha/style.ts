@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  min-width: 500px;
+  min-width: 700px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -9,68 +9,64 @@ export const Container = styled.div`
   flex-direction: column;
 
   img {
-    width: 20vw;
+    width: 30vw;
   }
 `;
 
 export const Header = styled.div`
-  color: #570903;
-  .Name {
-    input {
-      width: 100%;
-      background: hsla(255, 100%, 100%, 0.15);
-      padding: 10px;
-      border: 0;
-      border-radius: 5px;
-      font-size: 24px;
-      margin-bottom: 8px;
-      color: #570903;
-    }
-  }
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
 
-  .Others {
+  .others {
+    margin-top: 10px;
     display: flex;
-    margin-bottom: 20px;
-    label {
-      font-weight: 600;
-    }
-    .Classe input {
-      display: flex;
-      flex-direction: column;
-      margin-right: 8px;
-      background: hsla(255, 100%, 100%, 0.15);
-      padding: 10px;
-      border: 0;
-      border-radius: 5px;
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-    .Raça input {
-      display: flex;
-      flex-direction: column;
-      margin-right: 8px;
+    flex-direction: row;
 
-      background: hsla(255, 100%, 100%, 0.15);
-      padding: 10px;
-      border: 0;
-      border-radius: 5px;
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-    .Alinhamento input {
-      display: flex;
-      flex-direction: column;
-
-      background: hsla(255, 100%, 100%, 0.15);
-      padding: 10px;
-      border: 0;
-      border-radius: 5px;
-      font-size: 24px;
-      margin-bottom: 8px;
+    div:nth-child(2) {
+      margin: 0 15px;
     }
   }
 `;
-export const Attribuits = styled.div``;
+export const Attribuits = styled.div`
+  min-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 50%;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        p {
+          width: 50px;
+
+          margin-right: 15px;
+          font-weight: 600;
+        }
+        div {
+          input[type='number']::-webkit-inner-spin-button,
+          input[type='number']::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+`;
 export const SubAtrribuits = styled.div``;
 export const Attacks = styled.div``;
 export const Notations = styled.div``;

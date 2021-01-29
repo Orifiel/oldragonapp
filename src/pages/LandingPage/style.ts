@@ -32,21 +32,6 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
 
-    input {
-      background: transparent;
-      border-radius: 10px;
-      padding: 16px;
-      width: 95%;
-      margin: 8px;
-      display: flex;
-      align-items: center;
-      border: 0;
-      border-bottom: 1px solid #570903;
-    }
-    & + input {
-      margin-top: 0.6rem;
-    }
-
     button {
       background: #570903;
       color: #fff;
